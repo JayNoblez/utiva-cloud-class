@@ -1,9 +1,19 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    
+    color = {
+        'blue': '002aff',
+        'yellow': 'e1eb34',
+        'green': '28fc03',
+        'red': 'fc1703', 
+        'purple': 'b503fc'}
+    
+    return render_template('index.html', color=color)
+    
+
 
 @app.route('/register')
 def register():
