@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body style="background-color: #{{color['yellow']}};">
+
+        {% for hue in color.values() if hue != 'e1eb34'%}
+        
+            <h1 style="color: #{{hue}};">Welcome to the Utiva Cloud MasterClass!</h1>
+        {% endfor %}
+        <h1></h1>
+        
+    </body>
+</html>
