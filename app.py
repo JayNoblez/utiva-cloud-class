@@ -4,14 +4,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     
-    color = {
-        'blue': '002aff',
-        'yellow': 'e1eb34',
-        'green': '28fc03',
-        'red': 'fc1703', 
-        'purple': 'b503fc'}
-    
-    return render_template('index.html', color=color)
+    return render_template('index.html')
     
 
 
